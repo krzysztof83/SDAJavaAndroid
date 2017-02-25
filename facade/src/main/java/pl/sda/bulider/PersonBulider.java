@@ -4,6 +4,7 @@ package pl.sda.bulider;
  * Created by k.czechowski83@gmail.com on 2017-02-25.
  */
 public class PersonBulider {
+
     private Person person;
 
     public PersonBulider() {
