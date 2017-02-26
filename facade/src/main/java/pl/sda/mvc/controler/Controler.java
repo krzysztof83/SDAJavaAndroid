@@ -1,17 +1,19 @@
 package pl.sda.mvc.controler;
 
+import pl.sda.fibonacci.Fibonacci;
+import pl.sda.fibonacci.fibonacciImpl.FibonacciEnum;
+import pl.sda.fibonacci.fibonacciImpl.FibonacciFabric;
 import pl.sda.mvc.model.Model;
 
 import java.util.List;
-import java.util.Random;
 
 /**
  * Created by k.czechowski83@gmail.com on 2017-02-25.
  */
 public class Controler {
     public int getFibonnaci(int n){
-        Random random=new Random();
-        int val=random.nextInt(20000);
+        Fibonacci fibonacci= FibonacciFabric.produce(FibonacciEnum.ITERATION);
+        int val=(int)fibonacci.getN(n);
         Model.addValues(val);
         return val;
     }

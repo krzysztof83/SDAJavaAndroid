@@ -14,7 +14,7 @@ public class View {
             Scanner scanner=new Scanner(System.in);
             Integer choise=scanner.nextInt();
             Controler controler=new Controler();
-            if(choise!=null&&choise>0){
+            if(choise!=null&&choise>=0){
                 int result = controler.getFibonnaci(choise);
                 System.out.println("FIB = "+result);
             }else{
