@@ -7,9 +7,9 @@ import pl.sda.sort.factory.SortFactory;
  */
 public class SortSingeltonFactory extends SortFactory {
 
-    private static SortSingeltonFactory instance=new SortSingeltonFactory();
+    private static SortSingeltonFactory instance = new SortSingeltonFactory();
 
-    public static SortSingeltonFactory getInstance(){
+    public static SortSingeltonFactory getInstance() {
         return instance;
     }
 

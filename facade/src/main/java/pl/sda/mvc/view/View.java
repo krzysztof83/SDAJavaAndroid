@@ -9,16 +9,16 @@ import java.util.Scanner;
  */
 public class View {
     public static void main(String[] args) {
-      
-        while (true){
-            Scanner scanner=new Scanner(System.in);
-            Integer choise=scanner.nextInt();
-            Controler controler=new Controler();
-            if(choise!=null&&choise>=0){
+
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            Integer choise = scanner.nextInt();
+            Controler controler = new Controler();
+            if (choise != null && choise >= 0) {
                 int result = controler.getFibonnaci(choise);
-                System.out.println("FIB = "+result);
-            }else{
-                System.out.println("AVG = "+controler.average());
+                System.out.println("FIB = " + result);
+            } else {
+                System.out.println("AVG = " + controler.average());
             }
 
         }

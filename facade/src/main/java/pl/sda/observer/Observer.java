@@ -11,12 +11,9 @@ import java.util.Objects;
 public class Observer {
 
 
-
-
-    public void react(int val){
-        System.out.println("Wratosc "+val+ " zmieniono na 0");
+    public void react(int val) {
+        System.out.println("Wratosc " + val + " zmieniono na 0");
     }
-
 
 
 }

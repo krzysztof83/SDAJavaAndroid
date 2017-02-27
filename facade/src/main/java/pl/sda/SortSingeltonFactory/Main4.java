@@ -11,11 +11,11 @@ import java.util.Arrays;
 public class Main4 {
 
     public static void main(String[] args) {
-        SortSingeltonFactory factory=SortSingeltonFactory.getInstance();
+        SortSingeltonFactory factory = SortSingeltonFactory.getInstance();
 
-        Sort sort=factory.produce(SortTypeEnum.BUBBLE);
+        Sort sort = factory.produce(SortTypeEnum.BUBBLE);
 
-        int[] sortedArray=sort.sort(new int[]{4234,65654,13214,634,123,8867});
+        int[] sortedArray = sort.sort(new int[]{4234, 65654, 13214, 634, 123, 8867});
 
         System.out.println(Arrays.toString(sortedArray));
     }

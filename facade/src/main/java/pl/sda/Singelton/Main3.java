@@ -5,10 +5,10 @@ package pl.sda.Singelton;
  */
 public class Main3 {
     public static void main(String[] args) {
-        Singelton singelton= Singelton.getInstance();
+        Singelton singelton = Singelton.getInstance();
         System.out.println(singelton.getCounter() + " " + singelton.getName());
 
-        Singelton singelton2=Singelton.getInstance();
+        Singelton singelton2 = Singelton.getInstance();
         System.out.println(singelton.getCounter() + " " + singelton.getName());
     }
 }
